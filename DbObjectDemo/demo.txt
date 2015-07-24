@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model>
+    <entity name="something" representedClassName="DbSomething">
+        <attribute name="Id" optional="YES" attributeType="Integer 64" key="YES" autoIncrement="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="name2" optional="YES" attributeType="String"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean"/>
+        <attribute name="update_time" optional="YES" attributeType="DateTime"/>
+		<index name="update_time"/>
+        <index name="name"/>
+        <index name="name2"/>
+        <index name="selected"/>
+    </entity>
+</model>

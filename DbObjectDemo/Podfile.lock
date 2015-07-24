@@ -1,0 +1,45 @@
+PODS:
+  - M13ProgressSuite (1.2.7)
+  - MASAttributes (1.0.2)
+  - MGSwipeTableCell (1.4.3)
+  - ODRefreshControl (1.1.0)
+  - SAMCategories (0.5.2)
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core (= 3.7.2)
+  - SDWebImage/Core (3.7.2)
+  - TMCache (2.1.0)
+  - UIActionSheet+Blocks (0.9)
+  - UIAlertView+Blocks (0.9)
+  - UIImage-Categories (1.0.0)
+  - UIImage-Helpers (0.0.3)
+  - XMLDictionary (1.4)
+
+DEPENDENCIES:
+  - M13ProgressSuite
+  - MASAttributes
+  - MGSwipeTableCell
+  - ODRefreshControl
+  - SAMCategories
+  - SDWebImage
+  - TMCache
+  - UIActionSheet+Blocks
+  - UIAlertView+Blocks
+  - UIImage-Categories
+  - UIImage-Helpers
+  - XMLDictionary
+
+SPEC CHECKSUMS:
+  M13ProgressSuite: 03d194af6359da440641ba758aed5a18b0386a86
+  MASAttributes: c2eb698ee164bdb7e756470befca252a32c07707
+  MGSwipeTableCell: cb9805df3cc5cad75ad43a5c1eb424be0316f0bf
+  ODRefreshControl: 4c4c413bf70d2ea0c02a28ac0a0b3b4bf4dbfdea
+  SAMCategories: bf8287f7961a0b343168d1fee16338dc1626ea39
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+  TMCache: 95ebcc9b3c7e90fb5fd8fc3036cba3aa781c9bed
+  UIActionSheet+Blocks: e180b7dad0a721ab7f212ac9742af799008bb358
+  UIAlertView+Blocks: a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
+  UIImage-Categories: a0593f6a7991c99016b9ecadfbd38b3717ff1a73
+  UIImage-Helpers: 06b04a42bdd222844035602e87e936765c80f620
+  XMLDictionary: f9f51601ba76678b594ab485f2b00ec1fed23724
+
+COCOAPODS: 0.37.2
