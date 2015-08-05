@@ -16,6 +16,11 @@
 
 + (DbDatabase *)setupFile:(NSString *)dbFileName schema:(NSString *)schemaFileName copyFromBundle:(bool)copyFromBundle
 {
+    return [self setupFile:dbFileName schema:schemaFileName copyFromBundle:copyFromBundle forced:false];
+}
+
++ (DbDatabase *)setupFile:(NSString *)dbFileName schema:(NSString *)schemaFileName copyFromBundle:(bool)copyFromBundle forced:(bool)forced;
+{
     NSString * bundlePath = [DbDirectoryUtils getBundleFolder];
     NSString * schemaFile = [bundlePath stringByAppendingPathComponent:schemaFileName];
     NSString * docPath = [DbDirectoryUtils getDocumentFolder];
@@ -24,7 +29,7 @@
     if (copyFromBundle)
     {
         NSString * bundledDbFile = [bundlePath stringByAppendingPathComponent:dbFileName];
-        [DbFileUtils copyFile:dbFile from:bundledDbFile];
+        [DbFileUtils copyFile:dbFile from:bundledDbFile forced:forced];
     }
     return [DbSqliteDatabase databaseWithPath:dbFile schemaFile:schemaFile];
 }

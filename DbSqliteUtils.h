@@ -13,5 +13,6 @@
 @interface DbSqliteUtils : NSObject
 
 + (DbDatabase *)setupFile:(NSString *)dbFileName schema:(NSString *)schemaFileName copyFromBundle:(bool)copyFromBundle;
++ (DbDatabase *)setupFile:(NSString *)dbFileName schema:(NSString *)schemaFileName copyFromBundle:(bool)copyFromBundle forced:(bool)forced;
 
 @end
