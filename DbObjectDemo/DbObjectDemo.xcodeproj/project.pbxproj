@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3114A2631D7CA20F00740EED /* libDbObjectsUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A2601D7CA20200740EED /* libDbObjectsUI.a */; };
+		3114A2651D7CA21A00740EED /* libUIUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A2641D7CA21A00740EED /* libUIUtils.a */; };
+		3114A2E31D7D420700740EED /* DemoInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3114A2E21D7D420700740EED /* DemoInteractor.m */; };
+		3114A30A1D824C3000740EED /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3114A3091D824C3000740EED /* DemoViewController.m */; };
+		3114A30D1D824FAB00740EED /* DemoTableViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3114A30C1D824FAB00740EED /* DemoTableViewPresenter.m */; };
 		312BCB581B1E8A0B00BFAB8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 312BCB571B1E8A0B00BFAB8F /* main.m */; };
 		312BCB5B1B1E8A0B00BFAB8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 312BCB5A1B1E8A0B00BFAB8F /* AppDelegate.m */; };
 		312BCB5E1B1E8A0B00BFAB8F /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 312BCB5D1B1E8A0B00BFAB8F /* MasterViewController.m */; };
@@ -28,6 +33,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3114A25F1D7CA20200740EED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3114A2551D7CA20200740EED /* DbObjectsUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5129AC1D1ACCCF7B000E95F7;
+			remoteInfo = DbObjectsUI;
+		};
+		3114A2611D7CA20200740EED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3114A2551D7CA20200740EED /* DbObjectsUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5129AC281ACCCF7B000E95F7;
+			remoteInfo = DbObjectsUITests;
+		};
 		312BCB6F1B1E8A0B00BFAB8F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 312BCB4A1B1E8A0A00BFAB8F /* Project object */;
@@ -81,6 +100,14 @@
 
 /* Begin PBXFileReference section */
 		206B07877685284A28DCEFAA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3114A2551D7CA20200740EED /* DbObjectsUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DbObjectsUI.xcodeproj; path = ../../DbObjectsUI/DbObjectsUI.xcodeproj; sourceTree = "<group>"; };
+		3114A2641D7CA21A00740EED /* libUIUtils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUIUtils.a; path = "../../UIUtils/build/Debug-iphoneos/libUIUtils.a"; sourceTree = "<group>"; };
+		3114A2E11D7D420700740EED /* DemoInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoInteractor.h; sourceTree = "<group>"; };
+		3114A2E21D7D420700740EED /* DemoInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoInteractor.m; sourceTree = "<group>"; };
+		3114A3081D824C3000740EED /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		3114A3091D824C3000740EED /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		3114A30B1D824FAB00740EED /* DemoTableViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewPresenter.h; sourceTree = "<group>"; };
+		3114A30C1D824FAB00740EED /* DemoTableViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewPresenter.m; sourceTree = "<group>"; };
 		312BCB521B1E8A0B00BFAB8F /* DbObjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DbObjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		312BCB561B1E8A0B00BFAB8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		312BCB571B1E8A0B00BFAB8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -117,6 +144,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3114A2651D7CA21A00740EED /* libUIUtils.a in Frameworks */,
+				3114A2631D7CA20F00740EED /* libDbObjectsUI.a in Frameworks */,
 				312BCBE41B1E9E8100BFAB8F /* libsqlite3.0.dylib in Frameworks */,
 				312BCBD71B1E90BD00BFAB8F /* libBaseUtils.a in Frameworks */,
 				312BCBC31B1E904E00BFAB8F /* libDbBaseUtils.a in Frameworks */,
@@ -139,6 +168,7 @@
 		15748F502F8B58853BE87893 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3114A2641D7CA21A00740EED /* libUIUtils.a */,
 				312BCBE31B1E9E8100BFAB8F /* libsqlite3.0.dylib */,
 				312BCBC11B1E904E00BFAB8F /* libDbBaseUtils.a */,
 				312BCBC21B1E904E00BFAB8F /* libDbObjects.a */,
@@ -147,9 +177,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3114A2561D7CA20200740EED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3114A2601D7CA20200740EED /* libDbObjectsUI.a */,
+				3114A2621D7CA20200740EED /* DbObjectsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3114A29E1D7CE70300740EED /* Collection Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3114A2E11D7D420700740EED /* DemoInteractor.h */,
+				3114A2E21D7D420700740EED /* DemoInteractor.m */,
+			);
+			name = "Collection Interactor";
+			sourceTree = "<group>";
+		};
+		3114A3041D7D4E3300740EED /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3114A3081D824C3000740EED /* DemoViewController.h */,
+				3114A3091D824C3000740EED /* DemoViewController.m */,
+				3114A30B1D824FAB00740EED /* DemoTableViewPresenter.h */,
+				3114A30C1D824FAB00740EED /* DemoTableViewPresenter.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		312BCB491B1E8A0A00BFAB8F = {
 			isa = PBXGroup;
 			children = (
+				3114A2551D7CA20200740EED /* DbObjectsUI.xcodeproj */,
 				312BCBC51B1E90A200BFAB8F /* BaseUtils.xcodeproj */,
 				312BCB911B1E8A2A00BFAB8F /* DbObjectsSqlite.xcodeproj */,
 				312BCB541B1E8A0B00BFAB8F /* DbObjectDemo */,
@@ -172,6 +232,8 @@
 		312BCB541B1E8A0B00BFAB8F /* DbObjectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3114A3041D7D4E3300740EED /* UI */,
+				3114A29E1D7CE70300740EED /* Collection Interactor */,
 				312BCB9A1B1E8BC800BFAB8F /* Data */,
 				312BCB591B1E8A0B00BFAB8F /* AppDelegate.h */,
 				312BCB5A1B1E8A0B00BFAB8F /* AppDelegate.m */,
@@ -267,6 +329,7 @@
 				312BCB4F1B1E8A0B00BFAB8F /* Frameworks */,
 				312BCB501B1E8A0B00BFAB8F /* Resources */,
 				AF8800C0FFAB29E5097CB2FA /* Copy Pods Resources */,
+				5D487952F484BD0C519FECD9 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,7 +366,7 @@
 		312BCB4A1B1E8A0A00BFAB8F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "John Huang";
 				TargetAttributes = {
 					312BCB511B1E8A0B00BFAB8F = {
@@ -335,6 +398,10 @@
 					ProductGroup = 312BCB921B1E8A2A00BFAB8F /* Products */;
 					ProjectRef = 312BCB911B1E8A2A00BFAB8F /* DbObjectsSqlite.xcodeproj */;
 				},
+				{
+					ProductGroup = 3114A2561D7CA20200740EED /* Products */;
+					ProjectRef = 3114A2551D7CA20200740EED /* DbObjectsUI.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -345,6 +412,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		3114A2601D7CA20200740EED /* libDbObjectsUI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDbObjectsUI.a;
+			remoteRef = 3114A25F1D7CA20200740EED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3114A2621D7CA20200740EED /* DbObjectsUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DbObjectsUITests.xctest;
+			remoteRef = 3114A2611D7CA20200740EED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		312BCB971B1E8A2A00BFAB8F /* libDbObjectsSqlite.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -397,6 +478,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5D487952F484BD0C519FECD9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		78CD7F41DA87E38B648F19B6 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,8 +533,11 @@
 				312BCB5B1B1E8A0B00BFAB8F /* AppDelegate.m in Sources */,
 				312BCB5E1B1E8A0B00BFAB8F /* MasterViewController.m in Sources */,
 				312BCBAA1B1E8D7F00BFAB8F /* SomethingCell.m in Sources */,
+				3114A2E31D7D420700740EED /* DemoInteractor.m in Sources */,
 				312BCB581B1E8A0B00BFAB8F /* main.m in Sources */,
+				3114A30D1D824FAB00740EED /* DemoTableViewPresenter.m in Sources */,
 				640F38871B3B567D00668472 /* UIAlertView+Text.m in Sources */,
+				3114A30A1D824C3000740EED /* DemoViewController.m in Sources */,
 				312BCBA51B1E8D3200BFAB8F /* DbSomething.m in Sources */,
 				312BCB611B1E8A0B00BFAB8F /* DetailViewController.m in Sources */,
 			);
@@ -513,6 +612,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -589,6 +689,7 @@
 				INFOPLIST_FILE = DbObjectDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sudobility.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -610,6 +711,7 @@
 				INFOPLIST_FILE = DbObjectDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sudobility.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -628,6 +730,7 @@
 				);
 				INFOPLIST_FILE = DbObjectDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sudobility.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DbObjectDemo.app/DbObjectDemo";
 			};
@@ -643,6 +746,7 @@
 				);
 				INFOPLIST_FILE = DbObjectDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sudobility.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DbObjectDemo.app/DbObjectDemo";
 			};

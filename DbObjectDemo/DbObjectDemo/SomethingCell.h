@@ -7,14 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "InteractiveObjectPresenter.h"
 
 @class DbSomething;
 
-@interface SomethingCell : UITableViewCell
+@interface SomethingCell : UITableViewCell<InteractiveObjectPresenter>
 
 @property (nonatomic, strong) IBOutlet UILabel * textLabel;
 @property (nonatomic, strong) IBOutlet UILabel * detailTextLabel;
-
-@property (nonatomic, strong) DbSomething * something;
 
 @end

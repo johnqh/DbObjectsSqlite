@@ -11,9 +11,8 @@
 #import "DbSomething.h"
 
 @interface SomethingCell()
-{
-    DbSomething * _something;
-}
+
+@property (nonatomic, readonly) DbSomething * something;
 
 @end
 
@@ -21,33 +20,34 @@
 
 @synthesize textLabel;
 @synthesize detailTextLabel;
+@synthesize entry = _entry;
 
-- (DbSomething *)something
+- (void)setEntry:(NSObject<InteractiveObject> *)entry
 {
-    return _something;
-}
-
-- (void)setSomething:(DbSomething *)something
-{
-    if (_something != something)
+    if (_entry != entry)
     {
-        if (_something)
+        if (_entry)
         {
-            [_something removeObserver:self forKeyPath:@"name"];
-            [_something removeObserver:self forKeyPath:@"name2"];
-            [_something removeObserver:self forKeyPath:@"selected"];
-            [_something removeObserver:self forKeyPath:@"update_time"];
+            [_entry removeObserver:self forKeyPath:@"name"];
+            [_entry removeObserver:self forKeyPath:@"name2"];
+            [_entry removeObserver:self forKeyPath:@"selected"];
+            [_entry removeObserver:self forKeyPath:@"update_time"];
         }
-        _something = something;
-        if (_something)
+        _entry = entry;
+        if (_entry)
         {
-            [_something addObserver:self forKeyPath:@"name" options:0 context:nil];
-            [_something addObserver:self forKeyPath:@"name2" options:0 context:nil];
-            [_something addObserver:self forKeyPath:@"selected" options:0 context:nil];
-            [_something addObserver:self forKeyPath:@"update_time" options:0 context:nil];
+            [_entry addObserver:self forKeyPath:@"name" options:0 context:nil];
+            [_entry addObserver:self forKeyPath:@"name2" options:0 context:nil];
+            [_entry addObserver:self forKeyPath:@"selected" options:0 context:nil];
+            [_entry addObserver:self forKeyPath:@"update_time" options:0 context:nil];
         }
         [self update];
     }
+}
+
+- (DbSomething *)something
+{
+    return (DbSomething *)_entry;
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
@@ -82,17 +82,17 @@
 
 - (void)updateName
 {
-    self.textLabel.text = _something ? _something.name : nil;
+    self.textLabel.text = self.something ? self.something.name : nil;
 }
 
 - (void)updateName2
 {
-    self.detailTextLabel.text = _something ? _something.name2 : nil;
+    self.detailTextLabel.text = self.something ? self.something.name2 : nil;
 }
 
 - (void)updateSelected
 {
-    self.accessoryType = _something.selected.boolValue ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
+    self.accessoryType = self.something.selected.boolValue ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
 }
 
 - (void)updateTime
@@ -112,12 +112,12 @@
 
 - (void)prepareForReuse
 {
-    self.something = nil;
+    self.entry = nil;
 }
 
 - (void)dealloc
 {
-    self.something = nil;
+    self.entry = nil;
 }
 
 @end

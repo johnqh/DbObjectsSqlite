@@ -255,7 +255,7 @@
     SomethingCell * cell = [tableView dequeueReusableCellWithIdentifier:@"something" forIndexPath:indexPath];
 
     DbSomething * something = (DbSomething *)[[self somethings:indexPath.section] objectAtIndex:indexPath.row];
-    cell.something = something;
+    cell.entry = something;
     return cell;
 }
 
@@ -266,35 +266,6 @@
     DbSomething * something = (DbSomething *)[[self somethings:indexPath.section] objectAtIndex:indexPath.row];
     something.selected = [NSNumber numberWithBool:!something.selected.boolValue];
     [something saveToDb];
-}
-
-- (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewRowAction * name1Button = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Change\nName1" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
-        DbSomething * something = (DbSomething *)[[self somethings:indexPath.section] objectAtIndex:indexPath.row];
-        [UIAlertView showWithPrompt:@"Change Name1" default:something.name keyboardType:UIKeyboardTypeDefault autocapitalizationType:UITextAutocapitalizationTypeWords textOkBlock:^(UIAlertView *alertView, NSString *text) {
-            something.name = text;
-            [something saveToDb];
-        }];
-    }];
-    name1Button.backgroundColor = [UIColor grayColor]; //arbitrary color
-    
-    UITableViewRowAction * name2Button = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Change\nName2" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
-        DbSomething * something = (DbSomething *)[[self somethings:indexPath.section] objectAtIndex:indexPath.row];
-        [UIAlertView showWithPrompt:@"Change Name2" default:something.name2 keyboardType:UIKeyboardTypeDefault autocapitalizationType:UITextAutocapitalizationTypeWords textOkBlock:^(UIAlertView *alertView, NSString *text) {
-            something.name2 = text;
-            [something saveToDb];
-        }];
-    }];
-    name2Button.backgroundColor = [UIColor grayColor]; //arbitrary color
-    
-    UITableViewRowAction * deleteButton = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Delete" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
-        DbSomething * something = (DbSomething *)[[self somethings:indexPath.section] objectAtIndex:indexPath.row];
-        [something removeFromDb];
-    }];
-    deleteButton.backgroundColor = [UIColor redColor]; //arbitrary color
-    
-    return @[deleteButton, name2Button, name1Button]; //array with all the buttons you want. 1,2,3, etc...
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {

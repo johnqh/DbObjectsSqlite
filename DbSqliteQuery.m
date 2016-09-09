@@ -11,6 +11,7 @@
 
 #import "DbObject.h"
 #import "DbCollection.h"
+#import "DbCollection+Private.h"
 #import "DbSqliteDatabase.h"
 #import "DbTable.h"
 #import "DbField.h"
@@ -18,14 +19,6 @@
 #import "DbObjectUtils.h"
 
 #import "DebugHelp.h"
-
-@interface DbCollection()
-
-@property (nonatomic, strong) DbObject * example;
-@property (nonatomic, strong) NSMutableArray * entries;
-@property (nonatomic, strong) NSMutableArray * sortings;
-
-@end
 
 @implementation DbSqliteQuery
 

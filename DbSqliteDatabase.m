@@ -11,6 +11,7 @@
 #import "DbField.h"
 #import "DbIndex.h"
 #import "DbCollection.h"
+#import "DbCollection+Private.h"
 #import "DbSqliteQuery.h"
 #import "DbAppObjectCache.h"
 #import "SqliteEntry.h"
@@ -20,14 +21,6 @@
 
 static bool _initialized = false;
 static Class _sqliteEntryClass = nil;
-
-@interface DbCollection()
-
-@property (nonatomic, strong) DbObject * example;
-@property (nonatomic, strong) NSMutableArray * entries;
-@property (nonatomic, strong) NSMutableArray * sortings;
-
-@end
 
 @implementation DbSqliteDatabase
 
