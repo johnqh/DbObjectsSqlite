@@ -10,7 +10,7 @@
 
 @interface DemoViewController : InteractiveArrayViewController
 
-+ (IBAction)add:(id)sender;
+- (IBAction)add:(id)sender;
 
 
 @end

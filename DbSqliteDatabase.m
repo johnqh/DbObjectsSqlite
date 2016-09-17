@@ -227,7 +227,7 @@ static Class _sqliteEntryClass = nil;
 {
 	for (int i = 0; i < entries.entries.count; i ++)
 	{
-		SqliteEntry * entry = [entries.entries objectAtIndex:i];
+		SqliteEntry * entry = (SqliteEntry *)[entries.entries objectAtIndex:i];
 		[self parseEntry:entry toSchema:sqliteSchema];
 	}
 }

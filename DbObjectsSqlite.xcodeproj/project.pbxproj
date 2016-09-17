@@ -382,7 +382,7 @@
 			buildSettings = {
 				HEADER_SEARCH_PATHS = "$(inherited) ";
 				INSTALL_PATH = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -394,7 +394,7 @@
 			buildSettings = {
 				HEADER_SEARCH_PATHS = "$(inherited) ";
 				INSTALL_PATH = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
