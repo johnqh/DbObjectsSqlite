@@ -12,24 +12,6 @@
 		3114A2E31D7D420700740EED /* DemoInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3114A2E21D7D420700740EED /* DemoInteractor.m */; };
 		3114A30A1D824C3000740EED /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3114A3091D824C3000740EED /* DemoViewController.m */; };
 		3114A30D1D824FAB00740EED /* DemoTableViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3114A30C1D824FAB00740EED /* DemoTableViewPresenter.m */; };
-		3114A4351D83AC0F00740EED /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A4231D83AC0F00740EED /* libAFNetworking.a */; };
-		3114A4361D83AC0F00740EED /* libAFOAuth2Manager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A4241D83AC0F00740EED /* libAFOAuth2Manager.a */; };
-		3114A4371D83AC0F00740EED /* libELCImagePickerController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A4251D83AC0F00740EED /* libELCImagePickerController.a */; };
-		3114A4381D83AC0F00740EED /* libiRate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A4261D83AC0F00740EED /* libiRate.a */; };
-		3114A4391D83AC0F00740EED /* libMASAttributes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A4271D83AC0F00740EED /* libMASAttributes.a */; };
-		3114A43A1D83AC0F00740EED /* libMKMapView-ZoomLevel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A4281D83AC0F00740EED /* libMKMapView-ZoomLevel.a */; };
-		3114A43B1D83AC0F00740EED /* libMSCMoreOptionTableViewCell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A4291D83AC0F00740EED /* libMSCMoreOptionTableViewCell.a */; };
-		3114A43C1D83AC0F00740EED /* libNSData+Base64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A42A1D83AC0F00740EED /* libNSData+Base64.a */; };
-		3114A43D1D83AC0F00740EED /* libODRefreshControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A42B1D83AC0F00740EED /* libODRefreshControl.a */; };
-		3114A43E1D83AC0F00740EED /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A42C1D83AC0F00740EED /* libPods.a */; };
-		3114A43F1D83AC0F00740EED /* libReachability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A42D1D83AC0F00740EED /* libReachability.a */; };
-		3114A4401D83AC0F00740EED /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A42E1D83AC0F00740EED /* libSDWebImage.a */; };
-		3114A4411D83AC0F00740EED /* libSharedPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A42F1D83AC0F00740EED /* libSharedPods.a */; };
-		3114A4421D83AC0F00740EED /* libUIActionSheet+Blocks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A4301D83AC0F00740EED /* libUIActionSheet+Blocks.a */; };
-		3114A4431D83AC0F00740EED /* libUIAlertView+Blocks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A4311D83AC0F00740EED /* libUIAlertView+Blocks.a */; };
-		3114A4441D83AC0F00740EED /* libUIImage-Categories.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A4321D83AC0F00740EED /* libUIImage-Categories.a */; };
-		3114A4451D83AC0F00740EED /* libUIImage-Helpers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A4331D83AC0F00740EED /* libUIImage-Helpers.a */; };
-		3114A4461D83AC0F00740EED /* libXMLDictionary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3114A4341D83AC0F00740EED /* libXMLDictionary.a */; };
 		312BCB581B1E8A0B00BFAB8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 312BCB571B1E8A0B00BFAB8F /* main.m */; };
 		312BCB5B1B1E8A0B00BFAB8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 312BCB5A1B1E8A0B00BFAB8F /* AppDelegate.m */; };
 		312BCB5E1B1E8A0B00BFAB8F /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 312BCB5D1B1E8A0B00BFAB8F /* MasterViewController.m */; };
@@ -46,6 +28,7 @@
 		312BCBC41B1E904E00BFAB8F /* libDbObjects.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 312BCBC21B1E904E00BFAB8F /* libDbObjects.a */; };
 		312BCBD71B1E90BD00BFAB8F /* libBaseUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 312BCBCB1B1E90A200BFAB8F /* libBaseUtils.a */; };
 		312BCBE41B1E9E8100BFAB8F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 312BCBE31B1E9E8100BFAB8F /* libsqlite3.0.dylib */; };
+		3189FA3A1D8F995900545099 /* libSharedPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3189FA391D8F995900545099 /* libSharedPods.a */; };
 		640F38871B3B567D00668472 /* UIAlertView+Text.m in Sources */ = {isa = PBXBuildFile; fileRef = 640F38861B3B567D00668472 /* UIAlertView+Text.m */; };
 /* End PBXBuildFile section */
 
@@ -124,24 +107,6 @@
 		3114A3091D824C3000740EED /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		3114A30B1D824FAB00740EED /* DemoTableViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewPresenter.h; sourceTree = "<group>"; };
 		3114A30C1D824FAB00740EED /* DemoTableViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewPresenter.m; sourceTree = "<group>"; };
-		3114A4231D83AC0F00740EED /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libAFNetworking.a"; sourceTree = "<group>"; };
-		3114A4241D83AC0F00740EED /* libAFOAuth2Manager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFOAuth2Manager.a; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libAFOAuth2Manager.a"; sourceTree = "<group>"; };
-		3114A4251D83AC0F00740EED /* libELCImagePickerController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libELCImagePickerController.a; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libELCImagePickerController.a"; sourceTree = "<group>"; };
-		3114A4261D83AC0F00740EED /* libiRate.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiRate.a; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libiRate.a"; sourceTree = "<group>"; };
-		3114A4271D83AC0F00740EED /* libMASAttributes.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMASAttributes.a; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libMASAttributes.a"; sourceTree = "<group>"; };
-		3114A4281D83AC0F00740EED /* libMKMapView-ZoomLevel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMKMapView-ZoomLevel.a"; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libMKMapView-ZoomLevel.a"; sourceTree = "<group>"; };
-		3114A4291D83AC0F00740EED /* libMSCMoreOptionTableViewCell.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMSCMoreOptionTableViewCell.a; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libMSCMoreOptionTableViewCell.a"; sourceTree = "<group>"; };
-		3114A42A1D83AC0F00740EED /* libNSData+Base64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libNSData+Base64.a"; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libNSData+Base64.a"; sourceTree = "<group>"; };
-		3114A42B1D83AC0F00740EED /* libODRefreshControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libODRefreshControl.a; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libODRefreshControl.a"; sourceTree = "<group>"; };
-		3114A42C1D83AC0F00740EED /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libPods.a"; sourceTree = "<group>"; };
-		3114A42D1D83AC0F00740EED /* libReachability.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReachability.a; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libReachability.a"; sourceTree = "<group>"; };
-		3114A42E1D83AC0F00740EED /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libSDWebImage.a"; sourceTree = "<group>"; };
-		3114A42F1D83AC0F00740EED /* libSharedPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSharedPods.a; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libSharedPods.a"; sourceTree = "<group>"; };
-		3114A4301D83AC0F00740EED /* libUIActionSheet+Blocks.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUIActionSheet+Blocks.a"; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libUIActionSheet+Blocks.a"; sourceTree = "<group>"; };
-		3114A4311D83AC0F00740EED /* libUIAlertView+Blocks.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUIAlertView+Blocks.a"; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libUIAlertView+Blocks.a"; sourceTree = "<group>"; };
-		3114A4321D83AC0F00740EED /* libUIImage-Categories.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUIImage-Categories.a"; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libUIImage-Categories.a"; sourceTree = "<group>"; };
-		3114A4331D83AC0F00740EED /* libUIImage-Helpers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUIImage-Helpers.a"; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libUIImage-Helpers.a"; sourceTree = "<group>"; };
-		3114A4341D83AC0F00740EED /* libXMLDictionary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libXMLDictionary.a; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libXMLDictionary.a"; sourceTree = "<group>"; };
 		312BCB521B1E8A0B00BFAB8F /* DbObjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DbObjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		312BCB561B1E8A0B00BFAB8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		312BCB571B1E8A0B00BFAB8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -167,6 +132,7 @@
 		312BCBC21B1E904E00BFAB8F /* libDbObjects.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDbObjects.a; path = "../../DbObjects/build/Debug-iphoneos/libDbObjects.a"; sourceTree = "<group>"; };
 		312BCBC51B1E90A200BFAB8F /* BaseUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BaseUtils.xcodeproj; path = ../../BaseUtils/BaseUtils.xcodeproj; sourceTree = "<group>"; };
 		312BCBE31B1E9E8100BFAB8F /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		3189FA391D8F995900545099 /* libSharedPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSharedPods.a; path = "DerivedData/DbObjectDemo/Build/Products/Debug-iphonesimulator/libSharedPods.a"; sourceTree = "<group>"; };
 		640F38851B3B567D00668472 /* UIAlertView+Text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Text.h"; sourceTree = "<group>"; };
 		640F38861B3B567D00668472 /* UIAlertView+Text.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Text.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,24 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3114A4351D83AC0F00740EED /* libAFNetworking.a in Frameworks */,
-				3114A4361D83AC0F00740EED /* libAFOAuth2Manager.a in Frameworks */,
-				3114A4371D83AC0F00740EED /* libELCImagePickerController.a in Frameworks */,
-				3114A4381D83AC0F00740EED /* libiRate.a in Frameworks */,
-				3114A4391D83AC0F00740EED /* libMASAttributes.a in Frameworks */,
-				3114A43A1D83AC0F00740EED /* libMKMapView-ZoomLevel.a in Frameworks */,
-				3114A43B1D83AC0F00740EED /* libMSCMoreOptionTableViewCell.a in Frameworks */,
-				3114A43C1D83AC0F00740EED /* libNSData+Base64.a in Frameworks */,
-				3114A43D1D83AC0F00740EED /* libODRefreshControl.a in Frameworks */,
-				3114A43E1D83AC0F00740EED /* libPods.a in Frameworks */,
-				3114A43F1D83AC0F00740EED /* libReachability.a in Frameworks */,
-				3114A4401D83AC0F00740EED /* libSDWebImage.a in Frameworks */,
-				3114A4411D83AC0F00740EED /* libSharedPods.a in Frameworks */,
-				3114A4421D83AC0F00740EED /* libUIActionSheet+Blocks.a in Frameworks */,
-				3114A4431D83AC0F00740EED /* libUIAlertView+Blocks.a in Frameworks */,
-				3114A4441D83AC0F00740EED /* libUIImage-Categories.a in Frameworks */,
-				3114A4451D83AC0F00740EED /* libUIImage-Helpers.a in Frameworks */,
-				3114A4461D83AC0F00740EED /* libXMLDictionary.a in Frameworks */,
+				3189FA3A1D8F995900545099 /* libSharedPods.a in Frameworks */,
 				3114A2651D7CA21A00740EED /* libUIUtils.a in Frameworks */,
 				3114A2631D7CA20F00740EED /* libDbObjectsUI.a in Frameworks */,
 				312BCBE41B1E9E8100BFAB8F /* libsqlite3.0.dylib in Frameworks */,
@@ -217,24 +166,7 @@
 		15748F502F8B58853BE87893 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3114A4231D83AC0F00740EED /* libAFNetworking.a */,
-				3114A4241D83AC0F00740EED /* libAFOAuth2Manager.a */,
-				3114A4251D83AC0F00740EED /* libELCImagePickerController.a */,
-				3114A4261D83AC0F00740EED /* libiRate.a */,
-				3114A4271D83AC0F00740EED /* libMASAttributes.a */,
-				3114A4281D83AC0F00740EED /* libMKMapView-ZoomLevel.a */,
-				3114A4291D83AC0F00740EED /* libMSCMoreOptionTableViewCell.a */,
-				3114A42A1D83AC0F00740EED /* libNSData+Base64.a */,
-				3114A42B1D83AC0F00740EED /* libODRefreshControl.a */,
-				3114A42C1D83AC0F00740EED /* libPods.a */,
-				3114A42D1D83AC0F00740EED /* libReachability.a */,
-				3114A42E1D83AC0F00740EED /* libSDWebImage.a */,
-				3114A42F1D83AC0F00740EED /* libSharedPods.a */,
-				3114A4301D83AC0F00740EED /* libUIActionSheet+Blocks.a */,
-				3114A4311D83AC0F00740EED /* libUIAlertView+Blocks.a */,
-				3114A4321D83AC0F00740EED /* libUIImage-Categories.a */,
-				3114A4331D83AC0F00740EED /* libUIImage-Helpers.a */,
-				3114A4341D83AC0F00740EED /* libXMLDictionary.a */,
+				3189FA391D8F995900545099 /* libSharedPods.a */,
 				3114A2641D7CA21A00740EED /* libUIUtils.a */,
 				312BCBE31B1E9E8100BFAB8F /* libsqlite3.0.dylib */,
 				312BCBC11B1E904E00BFAB8F /* libDbBaseUtils.a */,
@@ -646,6 +578,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -692,6 +625,7 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

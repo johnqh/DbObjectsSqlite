@@ -13,6 +13,8 @@
 
 #import "DbSomething.h"
 
+#import "DemoInteractor.h"
+
 @interface DemoInteractor ()
 
 @property (nonatomic, strong) DbCollection * somethingsByName;

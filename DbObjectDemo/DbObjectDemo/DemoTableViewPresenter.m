@@ -13,20 +13,61 @@
 
 @implementation DemoTableViewPresenter
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 22;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    switch (section)
+    {
+        case 0:
+            return @"Sort by Text 1";
+
+        case 1:
+            return @"Sort by Text 2";
+
+        case 2:
+            return @"Selected";
+
+        default:
+            return nil;
+    }
+}
+
+- (InteractiveArrayTableViewSectionPresenter *)sectionPresenterFor:(NSObject<InteractiveObject> *)entry
+{
+    InteractiveArrayTableViewSectionPresenter * section = [super sectionPresenterFor:entry];
+    if (self.interactiveArray.entries.count > 0 && entry == self.interactiveArray.entries[0])
+    {
+        section.entryCellIdentifier = @"first";
+    }
+    else if (self.interactiveArray.entries.count > 1 && entry == self.interactiveArray.entries[1])
+    {
+        section.entryCellIdentifier = @"second";
+    }
+    else if (self.interactiveArray.entries.count > 2 && entry == self.interactiveArray.entries[2])
+    {
+        section.entryCellIdentifier = @"first";
+    }
+    return section;
+}
+
 - (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DbSomething * something = (DbSomething *)[self entryAtIndexPath:indexPath];
 
-    UITableViewRowAction * name1Button = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Change\nName1" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
-        [UIAlertView showWithPrompt:@"Change Name1" default:something.name keyboardType:UIKeyboardTypeDefault autocapitalizationType:UITextAutocapitalizationTypeWords textOkBlock:^(UIAlertView *alertView, NSString *text) {
+    UITableViewRowAction * name1Button = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Change\nText 1" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        [UIAlertView showWithPrompt:@"Text 1" default:something.name keyboardType:UIKeyboardTypeDefault autocapitalizationType:UITextAutocapitalizationTypeWords textOkBlock:^(UIAlertView *alertView, NSString *text) {
             something.name = text;
             [something saveToDb];
         }];
     }];
     name1Button.backgroundColor = [UIColor grayColor]; //arbitrary color
 
-    UITableViewRowAction * name2Button = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Change\nName2" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
-        [UIAlertView showWithPrompt:@"Change Name2" default:something.name2 keyboardType:UIKeyboardTypeDefault autocapitalizationType:UITextAutocapitalizationTypeWords textOkBlock:^(UIAlertView *alertView, NSString *text) {
+    UITableViewRowAction * name2Button = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Change\nText 2" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        [UIAlertView showWithPrompt:@"Text 2" default:something.name2 keyboardType:UIKeyboardTypeDefault autocapitalizationType:UITextAutocapitalizationTypeWords textOkBlock:^(UIAlertView *alertView, NSString *text) {
             something.name2 = text;
             [something saveToDb];
         }];
