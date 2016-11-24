@@ -333,6 +333,8 @@
 					"$(inherited)",
 					"$(SRCROOT)/../DbBaseUtils/**",
 					"$(SRCROOT)/../DbObjects/**",
+					"$(SRCROOT)/../Architectural/**",
+					"$(SRCROOT)/../BaseUtils/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -375,6 +377,8 @@
 					"$(inherited)",
 					"$(SRCROOT)/../DbBaseUtils/**",
 					"$(SRCROOT)/../DbObjects/**",
+					"$(SRCROOT)/../Architectural/**",
+					"$(SRCROOT)/../BaseUtils/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -386,7 +390,7 @@
 		31E4D9871A7BE3AD00431A74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(inherited) ";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INSTALL_PATH = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				OTHER_LDFLAGS = "-ObjC";
@@ -398,7 +402,7 @@
 		31E4D9881A7BE3AD00431A74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(inherited) ";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INSTALL_PATH = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				OTHER_LDFLAGS = "-ObjC";
